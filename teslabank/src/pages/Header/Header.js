@@ -9,18 +9,18 @@ const Header = () => {
 
     const toggleState = () => {
         if (toggleMenu === "disabled") {
-          setToggleMenu("active");
+            setToggleMenu("active");
         } else {
-          setToggleMenu("disabled");
+            setToggleMenu("disabled");
         }
     };
 
     return (
         <>
-             <S.Header id="header">
+            <S.Header id="header">
                 <S.Nav id="nav" className={toggleMenu}>
                     <S.HeaderWhiteHalf>
-                        <img src={logo} alt="logo TeslaBank"/>
+                        <img src={logo} alt="logo TeslaBank" />
                         <S.BtnMobile
                             onClick={() => toggleState()}
                             aria-label="Abrir Menu"
@@ -35,7 +35,7 @@ const Header = () => {
                             <S.LiOptionsHover>
                                 <S.DivTagAsset>
                                     <S.TagA href="#">TeslaBank</S.TagA>
-                                    <S.AssetArrow src={arrow}/>
+                                    <S.AssetArrow src={arrow} />
                                 </S.DivTagAsset>
                                 <S.UlOptions>
                                     <S.EachLi><S.TagA href="#" onClick={() => toggleState("disabled")}>Newsletter</S.TagA></S.EachLi>
@@ -45,7 +45,7 @@ const Header = () => {
                             <S.LiOptionsHover>
                                 <S.DivTagAsset>
                                     <S.TagA href="#">Conta Tb</S.TagA>
-                                    <S.AssetArrow src={arrow}/>
+                                    <S.AssetArrow src={arrow} />
                                 </S.DivTagAsset>
                                 <S.UlOptions>
                                     <S.EachLi><S.TagA href="#" onClick={() => toggleState("disabled")}>Criar sua conta</S.TagA></S.EachLi>
@@ -56,7 +56,7 @@ const Header = () => {
                             <S.LiOptionsHover>
                                 <S.DivTagAsset>
                                     <S.TagA href="#">Para você</S.TagA>
-                                    <S.AssetArrow src={arrow}/>
+                                    <S.AssetArrow src={arrow} />
                                 </S.DivTagAsset>
                                 <S.UlOptions>
                                     <li><S.TagA href="#" onClick={() => toggleState("disabled")}>Plano especial</S.TagA></li>
@@ -67,7 +67,7 @@ const Header = () => {
                     <S.HeaderRedHalf>
                         <S.LoginContainer>
                             <p>Login</p>
-                            <img src={login} alt="icone de usuário"/>
+                            <img src={login} alt="icone de usuário" />
                         </S.LoginContainer>
                     </S.HeaderRedHalf>
                 </S.Nav>

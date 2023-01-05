@@ -5,7 +5,7 @@ export const Header = styled.header`
   display: flex;
   width: 100%;
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     justify-content: space-around;
   }
 `;
@@ -14,11 +14,14 @@ export const HeaderWhiteHalf = styled.div`
   display: flex;
   align-items: center;
   width: 55%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 2rem;
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     width: 100%;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
 `;
 
@@ -28,9 +31,9 @@ export const HeaderRedHalf = styled.div`
   width: 45%;
   padding: 2rem;
   justify-content: space-around;
-  background: linear-gradient(220.94deg, #eb3850 14.43%, #cb162e 85.28%);
+  background-image: linear-gradient(to left,  #eb3850 14.43%, #cb162e 95.28%);
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     display: none;
   }
 `;
@@ -71,7 +74,7 @@ export const UlContainer = styled.ul`
   font-size: 18px;
   line-height: 150%;
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     display: none;
   }
 `;
@@ -115,7 +118,7 @@ export const LoginContainer = styled.div`
 
 // *Estilização do Hamburguer
 export const Hamburger = styled.span`
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     border-top: 2px solid;
     width: 20px;
     color: #000;
@@ -136,7 +139,7 @@ export const Hamburger = styled.span`
 // *Estilização do botão para mobile
 export const BtnMobile = styled.button`
   display: none;
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -153,13 +156,14 @@ export const Nav = styled.nav`
   width: 100%;
   transition: 0.3s;
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     justify-content: space-around;
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 1064px) {
     &.active #hamburger {
       border-top-color: transparent;
+      margin-top: 10px;
     }
 
     &.active #hamburger::before {
@@ -195,8 +199,11 @@ export const Nav = styled.nav`
     &.active {
       ${HeaderWhiteHalf} {
         background-color: #f7f2fa;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
+        height: 100vh;
+        z-index: 1;
+        position: fixed;
       }
     }
   }
