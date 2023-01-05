@@ -117,7 +117,7 @@ export const BtnAccount = styled.button`
     top: 0px;
     width: 0;
     height: 100%;
-    background-color: #272727;
+    background-color: #B61329;
     z-index: -1;
     transition: 1000ms;
     border-radius: 4px;
