@@ -41,6 +41,15 @@ export const HeaderRedHalf = styled.div`
 export const AssetArrow = styled.img``;
 
 // *Estilização da div tag A e asset arrow
+export const TagA = styled.a`
+  text-decoration: none;
+  color: #333333;
+
+  &:hover {
+    color: #d03333;
+  }
+`;
+
 export const DivTagAsset = styled.div`
   display: flex;
   align-items: center;
@@ -53,16 +62,12 @@ export const DivTagAsset = styled.div`
       margin-top: 5px;
       transition: 200ms ease-in-out;
     }
-  }
-`;
-
-export const TagA = styled.a`
-  text-decoration: none;
-  color: #333333;
-
   &:hover {
-    color: #d03333;
+      ${TagA} {
+        color: #d03333;
+      }
   }
+}
 `;
 
 // *Estilização da Ul

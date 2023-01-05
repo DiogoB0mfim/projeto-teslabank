@@ -10,12 +10,12 @@ const Hero = () => {
             <S.HeroContainer>
                 <S.WhiteHalfHero>
                     <S.WhiteHafInfos>
-                        <S.H1WhiteHalf>TeslaBank <br/> Banco 100% digital</S.H1WhiteHalf>
+                        <S.H1WhiteHalf>TeslaBank <br /> Banco 100% digital</S.H1WhiteHalf>
                         <S.PWhiteHalf>Abrir uma conta digital nunca foi tão simples!</S.PWhiteHalf>
                         <S.DivButtons>
                             <S.BtnAccount>Abrir uma conta</S.BtnAccount>
-                            <img src={applestore} alt="icone playstore" />
-                            <img src={playstore} alt="icone apple store" />
+                            <S.ImgStore src={applestore} alt="icone playstore" />
+                            <S.ImgStore src={playstore} alt="icone apple store" />
                         </S.DivButtons>
                     </S.WhiteHafInfos>
                 </S.WhiteHalfHero>

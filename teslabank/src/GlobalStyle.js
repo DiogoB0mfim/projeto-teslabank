@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
-    background-color: #F7F2FA;
+    background-color: #F2F4FD;
   }
 `;
 

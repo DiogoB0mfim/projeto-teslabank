@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
+// *Estilização do container da Hero Section
 export const HeroContainer = styled.div`
     display: flex;
     width: 100%;
@@ -8,8 +9,9 @@ export const HeroContainer = styled.div`
     @media(max-width: 1062px) {
         justify-content: center;
     }
-`
+`;
 
+// *Estilização da metade branca da hero
 export const WhiteHalfHero = styled.div`
     display: flex;
     flex-direction: column;
@@ -20,7 +22,7 @@ export const WhiteHalfHero = styled.div`
     @media(max-width: 1062px) {
         width: 90%;
     }
-`
+`;
 
 export const WhiteHafInfos = styled.div`
     display: flex;
@@ -31,7 +33,7 @@ export const WhiteHafInfos = styled.div`
         width: 90%;
         margin-bottom: 2rem;
     }
-`
+`;
 
 export const H1WhiteHalf = styled.h1`
     font-family: 'Sora', sans-serif;
@@ -47,7 +49,7 @@ export const H1WhiteHalf = styled.h1`
         font-size: 32px;
         margin-bottom: 40px;
     }
-`
+`;
 
 export const PWhiteHalf = styled.p`
     font-size: 24px;
@@ -58,14 +60,44 @@ export const PWhiteHalf = styled.p`
     @media(max-width: 600px) {
         font-size: 22px;
     }
-`
+`;
 
+// *Estilização da div de botões da metade branca da hero
 export const DivButtons = styled.div`
     display: flex;
     align-items: center;
     gap: 3rem;
     margin-top: 2rem;
-`
+`;
+
+const TrembleStore = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  75% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+`;
+
+export const ImgStore = styled.img`
+    cursor: pointer;
+    &:hover {
+        animation: ${TrembleStore}  0.5s;
+    }
+`;
 
 export const BtnAccount = styled.button`
   background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%); 
@@ -97,8 +129,9 @@ export const BtnAccount = styled.button`
   @media (max-width: 600px) {
     font-size: 17px;
   }
-`
+`;
 
+// *Estilização da metade vermelha da hero
 export const RedHalfHero = styled.div`
     display: flex;
     width: 45%;
@@ -108,7 +141,7 @@ export const RedHalfHero = styled.div`
     @media(max-width: 1064px) {
         display: none;
     }
-`
+`;
 
 export const DivCards = styled.div`
     display: flex;
@@ -116,7 +149,7 @@ export const DivCards = styled.div`
     align-items: center;
     margin-bottom: 9.375rem;
     width: 100%;
-`
+`;
 
 const animationCardFront = keyframes`
     0%{
@@ -133,7 +166,7 @@ const animationCardFront = keyframes`
         transform: rotate(0deg) translateY(0);
         transition: ease-in-out  2;
     }
-`
+`;
 
 const animationCardBack = keyframes`
     0%{
@@ -150,7 +183,7 @@ const animationCardBack = keyframes`
         transform: rotate(0) translateY(0);
         transition: ease-in-out  2;
     }
-`
+`;
 
 export const CardFront = styled.img`
     position: absolute;
@@ -166,7 +199,7 @@ export const CardFront = styled.img`
     @media(max-width: 1350px) {
         margin-right: 13rem;
     }
-`
+`;
 
 export const CardBack = styled.img`
     position: absolute;
@@ -182,7 +215,7 @@ export const CardBack = styled.img`
     @media(max-width: 1350px) {
         margin-right: 7rem;
     }
-`
+`;
 
 
 
