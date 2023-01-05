@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // *Estilização do Header
 export const Header = styled.header`
@@ -30,8 +30,8 @@ export const HeaderRedHalf = styled.div`
   align-items: center;
   width: 45%;
   padding: 2rem;
-  justify-content: space-around;
-  background-image: linear-gradient(to left,  #eb3850 14.43%, #cb162e 95.28%);
+  justify-content: flex-end;
+  background: linear-gradient(to left, #EB3850 14.43%, #CB162E 85.28%);
 
   @media (max-width: 1064px) {
     display: none;
@@ -110,15 +110,42 @@ export const EachLi = styled.li`
 `;
 
 // *Estilização da div de login
+const TrembleLogin = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  75% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 export const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  margin-right: 14rem;
   gap: 1rem;
   color: #fff;
   cursor: pointer;
+
+  &:hover {
+    animation: ${TrembleLogin}  0.5s;
+  }
 `;
 
 // *Estilização do Hamburguer

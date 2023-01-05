@@ -136,7 +136,7 @@ export const RedHalfHero = styled.div`
     display: flex;
     width: 45%;
     padding: 0.35rem;
-    background-image: linear-gradient(to left,  #eb3850 14.43%, #cb162e 95.28%);
+    background: linear-gradient(to left, #EB3850 14.43%, #CB162E 85.28%);
 
     @media(max-width: 1064px) {
         display: none;
