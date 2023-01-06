@@ -1,11 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
+// * Estilização container de benefícios
 export const ContainerBenefits = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F8F9FF;
-    height: 80vh;
+    height: 100vh;
     padding: 2rem;
     gap: 20rem;
 
@@ -19,6 +20,7 @@ export const ContainerBenefits = styled.div`
     }
 `
 
+// * Estilização div do celular
 export const DivPhone = styled.div`
     @media(max-width: 1154px) {
         display: none;
@@ -89,9 +91,7 @@ export const ImgCursor = styled.img`
     }
 `
 
-
-
-
+// * Estilização div de informações
 export const DivInfos = styled.div`
     display: flex;
     flex-direction: column;
@@ -103,6 +103,7 @@ export const DivBenefits = styled.div`
     align-items: center;
     border-bottom: 1px solid rgba(220, 220, 220, 0.5);
 `
+
 const TrembleIconBenefit = keyframes`
   0% {
     transform: translateY(0);
@@ -123,7 +124,7 @@ const TrembleIconBenefit = keyframes`
   100% {
     transform: translateY(0);
   }
-`;
+`
 
 export const IconBenefit = styled.img`
     &:hover {
