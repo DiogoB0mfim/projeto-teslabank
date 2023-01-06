@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     width: 100%;
     height: 86.9vh;
     
-    @media(max-width: 1062px) {
+    @media(max-width: 1154px) {
         justify-content: center;
     }
 `;
@@ -17,9 +17,9 @@ export const WhiteHalfHero = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 50%;
 
-    @media(max-width: 1062px) {
+    @media(max-width: 1154px) {
         width: 90%;
     }
 `;
@@ -41,7 +41,7 @@ export const H1WhiteHalf = styled.h1`
     font-size: 64px;
     color: #E51D37;
 
-    @media(max-width: 1190px) {
+    @media(max-width: 1306px) {
         font-size: 48px;
     }
 
@@ -54,7 +54,7 @@ export const H1WhiteHalf = styled.h1`
 export const PWhiteHalf = styled.p`
     font-size: 24px;
     font-weight: 500;
-    color: #333333;
+    color: #868587;
     margin-top: -19px;
 
     @media(max-width: 600px) {
@@ -134,11 +134,10 @@ export const BtnAccount = styled.button`
 // *Estilização da metade vermelha da hero
 export const RedHalfHero = styled.div`
     display: flex;
-    width: 45%;
-    padding: 0.35rem;
+    width: 50%;
     background: linear-gradient(to left, #EB3850 14.43%, #CB162E 85.28%);
 
-    @media(max-width: 1064px) {
+    @media(max-width: 1154px) {
         display: none;
     }
 `;

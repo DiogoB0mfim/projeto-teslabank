@@ -5,7 +5,7 @@ export const Header = styled.header`
   display: flex;
   width: 100%;
 
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     justify-content: space-around;
   }
 `;
@@ -13,7 +13,7 @@ export const Header = styled.header`
 export const HeaderWhiteHalf = styled.div`
   display: flex;
   align-items: center;
-  width: 55%;
+  width: 50%;
   justify-content: space-evenly;
   padding: 2rem;
 
@@ -28,12 +28,12 @@ export const HeaderWhiteHalf = styled.div`
 export const HeaderRedHalf = styled.div`
   display: flex;
   align-items: center;
-  width: 45%;
+  width: 50%;
   padding: 2rem;
   justify-content: flex-end;
   background: linear-gradient(to left, #EB3850 14.43%, #CB162E 85.28%);
 
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     display: none;
   }
 `;
@@ -79,7 +79,7 @@ export const UlContainer = styled.ul`
   font-size: 18px;
   line-height: 150%;
 
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     display: none;
   }
 `;
@@ -150,7 +150,7 @@ export const LoginContainer = styled.div`
 
 // *Estilização do Hamburguer
 export const Hamburger = styled.span`
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     border-top: 2px solid;
     width: 20px;
     color: #000;
@@ -171,7 +171,7 @@ export const Hamburger = styled.span`
 // *Estilização do botão para mobile
 export const BtnMobile = styled.button`
   display: none;
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -188,11 +188,11 @@ export const Nav = styled.nav`
   width: 100%;
   transition: 0.3s;
 
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     justify-content: space-around;
   }
 
-  @media (max-width: 1064px) {
+  @media (max-width: 1154px) {
     &.active #hamburger {
       border-top-color: transparent;
       margin-top: 10px;
