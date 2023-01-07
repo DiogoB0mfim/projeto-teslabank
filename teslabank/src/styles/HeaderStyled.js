@@ -59,8 +59,8 @@ export const DivTagAsset = styled.div`
 
   &:hover {
     ${AssetArrow} {
-      margin-top: 5px;
-      transition: 200ms ease-in-out;
+      transform: rotate(180deg);
+      transition: 400ms ease-in-out;
     }
   &:hover {
       ${TagA} {
@@ -101,6 +101,13 @@ export const LiOptionsHover = styled.li`
       box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
       padding: 20px;
       margin-top: 0.2rem;
+    }
+
+    &:hover {
+      ${AssetArrow} {
+        transform: rotate(180deg);
+        transition: 400ms ease-in-out;
+      }
     }
   }
 `;
