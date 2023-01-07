@@ -6,10 +6,9 @@ import gift from "../../assets/gift.png"
 import shield from "../../assets/shield.png"
 import cart from "../../assets/shopping-cart.png"
 
-
 const Advantages = () => {
     return (
-        <>  
+        <>
             <S.ContainerAdvantages>
                 <S.ContainerTitle>
                     <S.HashTag>#INOVAÇÃO</S.HashTag>

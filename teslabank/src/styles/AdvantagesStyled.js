@@ -9,7 +9,7 @@ export const ContainerTitle = styled.div`
 `
 
 export const HashTag = styled.p`
-    margin-right: 57.3rem;
+    margin-right: 64.2rem;
     font-family: 'Sora', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -22,8 +22,7 @@ export const HashTag = styled.p`
     }
 
     @media(max-width: 600px) {
-        
-        margin-right: 12.4rem;
+        margin-right: 15.4rem;
     }
 `
 
@@ -33,7 +32,7 @@ export const RedSpan = styled.span`
 
 export const Title = styled.h2`
     margin-top: -1rem;
-    margin-right: 40rem;
+    margin-right: 47rem;
     font-family: 'Sora', sans-serif;
     font-weight: 600;
     font-size: 40px;
@@ -48,7 +47,7 @@ export const Title = styled.h2`
     @media(max-width: 600px) {
         align-items: center;
         font-size: 32px;
-        margin-right: 0rem;
+        margin-right: 3rem;
     }
 `
 
@@ -73,7 +72,7 @@ export const DivAllAdvantage = styled.div`
 
 export const EachAdvantage = styled.div`
     display: flex;
-    width: 260px;
+    width: 300px;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
