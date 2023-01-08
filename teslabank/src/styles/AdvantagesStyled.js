@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// *Estilização container de titulo
 export const ContainerTitle = styled.div`
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@ export const Title = styled.h2`
     }
 `
 
+// *Estilização container de vantagens
 export const ContainerAdvantages = styled.div`
     display: flex;
     justify-content: center;
