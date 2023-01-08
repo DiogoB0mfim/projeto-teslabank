@@ -14,7 +14,6 @@ export const HashTag = styled.p`
     font-family: 'Sora', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: 21.78px;
     color: #E51D37;
 
     @media(max-width: 1154px) {

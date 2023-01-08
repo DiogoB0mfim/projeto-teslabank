@@ -3,6 +3,8 @@ import Header from "./pages/Header/Header";
 import Hero from "./pages/Hero/Hero";
 import Benefits from "./pages/Benefits/Benefits";
 import Advantages from "./pages/Advantages/Advantages";
+import Depositions from "./pages/Depositions/Depositions";
+import Download from "./pages/Download/Download";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <Hero/>
       <Benefits/>
       <Advantages/>
+      <Depositions/>
+      <Download/>
     </>
   );
 };
