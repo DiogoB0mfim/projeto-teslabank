@@ -32,10 +32,10 @@ export const DivInfos = styled.div`
 export const DivBtnDownload = styled.div`
     display: flex;
     gap: 2rem;
+    background-color: blue;
 
     @media (max-width: 800px) {
-        width: 30%;
-        background-color: blue;
+        justify-content: center;
     }
 `
 
@@ -117,6 +117,6 @@ export const ImgBtn = styled.img`
     }
 
     @media(max-width: 800px) {
-        width: 100%;
+        width: 40%;
     }
 `
