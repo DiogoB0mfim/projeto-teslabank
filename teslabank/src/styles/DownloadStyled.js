@@ -32,6 +32,11 @@ export const DivInfos = styled.div`
 export const DivBtnDownload = styled.div`
     display: flex;
     gap: 2rem;
+
+    @media (max-width: 800px) {
+        width: 30%;
+        background-color: blue;
+    }
 `
 
 export const H2Download = styled.h2`
