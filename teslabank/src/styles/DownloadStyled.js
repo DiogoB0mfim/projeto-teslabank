@@ -32,7 +32,6 @@ export const DivInfos = styled.div`
 export const DivBtnDownload = styled.div`
     display: flex;
     gap: 2rem;
-    background-color: blue;
 
     @media (max-width: 800px) {
         justify-content: center;
