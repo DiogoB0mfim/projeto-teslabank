@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// *Estilização container de ajuda
 export const ContainerHelp = styled.div`
     display: flex;
     flex-direction: column;
@@ -14,6 +15,7 @@ export const ContainerHelp = styled.div`
     }
 `
 
+// *Estilização cada ajuda
 export const EachHelp = styled.div`
     display: flex;
     justify-content: center;

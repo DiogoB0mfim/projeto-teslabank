@@ -6,6 +6,7 @@ import Advantages from "./pages/Advantages/Advantages";
 import Depositions from "./pages/Depositions/Depositions";
 import Download from "./pages/Download/Download";
 import Help from "./pages/Help/Help";
+import Footer from "./pages/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Depositions/>
       <Download/>
       <Help/>
+      <Footer/>
     </>
   );
 };
